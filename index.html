@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Домашка CSS</title>
+</head>
+<body>
+    <h1>ЗАГОЛОВОК</h1>
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ut corporis animi nisi provident hic corrupti, veniam, recusandae quibusdam aliquid explicabo dignissimos beatae saepe illum ad praesentium ex, tempora tenetur.
+        <p id="dolor">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio delectus reiciendis architecto cum. Reiciendis quia delectus nisi placeat, repellendus nobis impedit autem, minima doloremque ut voluptatibus voluptatem dolorem laudantium eos.
+        </p>
+    </div><br>
+
+
+1.ПРИОРИТЕТНОСТЬ НАНЕСЕНИЯ СТИЛЯ ПО УБЫВАНИЮ ПРИОРИТЕТНОСТИ: id, class, тег
+РАВНОЗНАЧНЫЕ КЛАССЫ: ПРИОРИТЕТНЕЙ БУДЕТ ТОТ КЛАСС, ЧТО ПРИПИСАН НИЖЕ В СПИСКЕ СТИЛЕЙ<br><br><br><br>
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia labore iusto, illum maiores nostrum aut alias inventore illo, dignissimos accusamus tempore animi? Quisquam numquam quo, ipsam quod ullam sunt molestias.
+    </p>
+    <p class="text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, consequuntur iure. Aliquid voluptatibus vero consectetur, perferendis quis libero a ab officia error animi quisquam quibusdam atque expedita aperiam ratione alias.
+    </p><br>
+2.УТОЧНЕНИЕ<br><br><br><br>
+<p class="text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi perspiciatis tenetur at animi qui fugiat tempore fugit earum laudantium, impedit voluptatum eos minus suscipit nulla aperiam ab recusandae architecto reiciendis.
+</p>
+<p class="text text2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ab excepturi inventore ex quod aliquam perferendis ipsam quisquam, cumque esse aliquid odit ducimus ullam iusto vel commodi error. Omnis, aliquid.
+</p><br>
+3.ПРИОРИТЕТНОСТЬ ТЕГА НИЖЕ, ЧЕМ ПРИОРИТЕТНОТСТЬ КЛАССЫ<br><br><br><br>
+<div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, incidunt sed, repudiandae omnis soluta numquam expedita impedit natus minus reprehenderit commodi explicabo. Deserunt, suscipit. Deserunt inventore architecto voluptate. Debitis, facilis.
+</div>
+<div class="text2">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, omnis, minima fugit voluptatem labore similique laboriosam nisi dolore expedita ipsum dolorem sequi a aut facilis eaque alias! Qui, ad iure.
+</div><br>
+4.ВЛОЖЕННОСТЬ<br><br><br><br>
+<p>
+    Lorem ipsum dolor sit amet consectetur <span>adipisicing elit.</span> Nostrum, eum! Fugiat suscipit quidem illum molestias magni eligendi nisi, rerum deleniti expedita at dolorum corporis pariatur minima natus similique aliquid. Laboriosam!
+</p>
+<span>ТУТ СТОИТ СПАН</span><br><br>
+5.СЕЛЕКТОРЫ АТРИБУТОВ<br><br><br><br>
+<p class="text" title="Селекторы атрибутов">Это селектор</p>
+<div class="topsilence">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum harum exercitationem cum nesciunt! Dolorum similique voluptatem rerum ducimus fuga in libero corporis placeat! Iure, ea reiciendis quos repudiandae rem alias!
+</div>
+<div class="top____silence">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt optio eligendi fuga praesentium itaque officiis accusamus dolor laborum aut nulla, quod asperiores aspernatur doloribus neque animi ipsum possimus repellat? Assumenda.
+</div><br>
+6.УРОВНИ ВЛОЖЕННОСТИ<br><br><br><br>
+<div class="flor">
+    <p>
+        ПЕРВЫЙ УРОВЕНЬ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus earum, ipsum ipsa quaerat consectetur ratione id nulla expedita dolores laboriosam fuga, facere qui optio neque voluptatibus voluptatem temporibus debitis esse?
+    </p>
+    <div>
+        <p>
+            ВТОРОЙ УРОВЕНЬ Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi fugit dolorem repudiandae veniam. Sapiente alias officiis dolores ab. Optio molestiae possimus totam earum laboriosam placeat culpa voluptate quam illum.
+        </p>
+    </div>
+    <p>
+        ПЕРВЫЙ УРОВЕНЬ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, eaque totam natus recusandae assumenda rem id? Dignissimos excepturi, sed obcaecati odit eaque inventore eum itaque? Aut nulla molestias minus odio.
+    </p>
+</div><br>
+7.ОБРАЩЕНИЕ К СЛЕДУЮЩЕМУ ОБЪЕКТУ ТОГО ЖЕ УРОВНЯ<br><br><br><br>
+<div>
+    <p class="next">
+        ПЕРВЫЙ УРОВЕНЬ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus earum, ipsum ipsa quaerat consectetur ratione id nulla expedita dolores laboriosam fuga, facere qui optio neque voluptatibus voluptatem temporibus debitis esse?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero totam eaque suscipit repudiandae veritatis aliquam minus, praesentium quas iste quaerat consectetur, doloremque odit voluptatibus quasi. Sapiente officiis totam aliquid.
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, nobis perspiciatis. Minus placeat optio voluptatum eveniet. Ipsa reiciendis reprehenderit accusantium, aut veniam at distinctio cum provident quod placeat, voluptates ab.
+    </p>
+</div><br>
+8.ОБРАЩЕНИЕ КО ВСЕМ СЛЕДУЮЩИМ ОБЪЕКТАМ ТОГО ЖЕ УРОВНЯ<br><br><br><br>
+    <p>
+        ПЕРВЫЙ УРОВЕНЬ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores in explicabo provident saepe perferendis aspernatur aperiam. Alias molestiae repellat corrupti optio corporis incidunt iste vitae autem, earum expedita distinctio.
+    </p>
+    <div>
+        <p class="all-next">
+            ВТОРОЙ УРОВЕНЬ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum cumque deserunt nulla temporibus enim exercitationem non officiis provident voluptate id earum ad rem dolore, in inventore quidem eveniet dignissimos est?
+        </p>
+        <p>
+            ВТОРОЙ УРОВЕНЬ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae incidunt inventore provident quia obcaecati nobis, unde quaerat cumque pariatur sapiente, praesentium facilis laudantium exercitationem porro magni rerum enim aliquid perferendis?
+        </p>
+        <p>
+            ВТОРОЙ УРОВЕНЬ Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quae distinctio quod ad perspiciatis? Esse et ipsam eum itaque. Sed, assumenda rem? Ex libero fugiat minus sunt ullam, rerum eum?
+        </p>
+    </div>
+</body>
+</html>
